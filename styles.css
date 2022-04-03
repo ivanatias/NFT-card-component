@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/**********GLOBAL STYLES***********/
+
+:root {
+  --blue-color: hsl(215, 51%, 70%);
+  --cyan-color: hsl(178, 100%, 50%);
+  --background-main: hsl(217, 54%, 11%);
+  --background-card: hsl(216, 50%, 16%);
+  --darkblue-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+  --font-family: "Outfit", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  height: 700px;
+  background-color: hsla(215, 63%, 14%, 0.137);
+  border-radius: 2rem;
+}
+
+.card-overlay {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: hsl(215, 59%, 10%);
+  border-radius: 2.5rem;
+  position: relative;
+}
+
+.card-content {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background-card);
+  position: relative;
+  top: -0.5rem;
+  border-radius: 0.8rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: contain;
+  -o-object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h4 {
+  color: var(--white-color);
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.desc {
+  width: 100%;
+  text-align: left;
+  color: hsl(215, 25%, 54%);
+  margin-top: 1rem;
+}
+
+.bid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.bid-info,
+.bid-timeleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.eth-icon,
+.clock-icon {
+  margin-right: 0.5rem;
+}
+
+.price {
+  color: var(--cyan-color);
+}
+
+.timeleft {
+  color: hsl(215, 25%, 54%);
+}
+
+.createdby {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--darkblue-color);
+}
+
+.creator-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  -o-object-fit: contain;
+  margin-right: 1rem;
+}
+
+.creator-name {
+  color: hsl(215, 25%, 54%);
+}
+
+span {
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h4:hover,
+.creator-name span:hover {
+  color: var(--cyan-color);
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--darkblue-color);
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--white-color);
+  margin: 0.5rem 0;
+}
